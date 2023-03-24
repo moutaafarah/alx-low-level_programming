@@ -1,0 +1,31 @@
+#include"main.h"
+
+/**
+ * print_diagonal - print a diagonal line
+ *
+ * @n: is the number of times the \ character
+ *     should be printed
+*/
+
+void print_triangle(int size)
+{
+	int high, lenght;
+
+	if (size <= 0)
+		_putchar('\n');
+	else
+	{
+		for (high = 1; high <= size; high++)
+		{
+			for (lenght = 1; lenght <= (size -= 1); lenght++)
+			{
+				_putchar(' ');
+			}
+			for (lenght = 1; lenght <= high; lenght++)
+			{
+				_putchar('#');
+			}
+		}
+		_putchar('\n');
+	}
+}
