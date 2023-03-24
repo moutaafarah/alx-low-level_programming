@@ -4,9 +4,7 @@
  * print_triangle - print a triangle
  *
  * @size: is the number of times the # character printed
- *
- * Return: Always 0 (Success)
-*/
+ */
 
 void print_triangle(int size)
 {
