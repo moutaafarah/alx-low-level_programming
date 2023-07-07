@@ -1,6 +1,20 @@
 #include "main.h"
 
+/*
+ * Description - this is a version With Debug Option, this won't work
+ *		with the checker copy go to the readme and click
+ *		checker version that one will work with the checker.
+*/
 
+/**
+ * debug_1 - print debug statements
+ *
+ * @n: value of n
+ * @length: length of n
+ * @mask: mask of n
+ *
+ * Return: nothing
+*/
 void debug_1(unsigned long int n, int length, unsigned long int mask)
 {
 	printf("Length of %lu (n) is %i ", n, (length + 1));
@@ -10,7 +24,14 @@ void debug_1(unsigned long int n, int length, unsigned long int mask)
 }
 
 
-
+/**
+ * debug_2 - print debug statements
+ *
+ * @n: value of n
+ * @mask: mask of n
+ *
+ * Return: nothing
+*/
 void debug_2(unsigned long int n, unsigned long int mask)
 {
 	printf("Value of n is %lu, ", n);
@@ -18,13 +39,25 @@ void debug_2(unsigned long int n, unsigned long int mask)
 	printf("value of [n & mask] is %lu.\n\n", (n & mask));
 }
 
-
+/**
+ * debug_3 - print debug statements
+ *
+ * @mask: mask of value n
+ *
+ * Return: nothing
+*/
 void debug_3(unsigned long int mask)
 {
 	printf("\nValue of mask is %lu after right shifting by one.\n\n", mask);
 }
 
-
+/**
+ * _length - find the length of @n
+ *
+ * @n: value to find its length
+ *
+ * Return: length
+*/
 int _length(unsigned long int n)
 {
 	int length = 0;
@@ -48,7 +81,13 @@ int _length(unsigned long int n)
 	return (length);
 }
 
-
+/**
+ * print_binary - a function that converts a decimal to binary
+ *
+ * @n: decimal number to convert
+ *
+ * Return: nothing
+*/
 void print_binary(unsigned long int n)
 {
 	int length;
@@ -79,4 +118,4 @@ void print_binary(unsigned long int n)
 		debug_3(mask);
 		#endif
 	}
-}
+}  
